@@ -19,23 +19,14 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
-    </tr>
+    <?php foreach($posts as $post): ?>
+        <tr>
+            <th scope="row"><?= $post['id']?></th>
+            <td><?=$post['fname']?></td>
+            <td><?=$post['lname']?></td>
+            <td><?=$post['email']?></td>
+        </tr>
+    <?php endforeach; ?>
     </tbody>
 </table>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
