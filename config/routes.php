@@ -1,5 +1,6 @@
 <?php
 
 $routes = [
-    '' => '/PostController.php'
+    '' => '/PostController.php',
+    'id=1' => 'ShowController.php' // for check
 ];

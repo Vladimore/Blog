@@ -21,10 +21,10 @@
     <tbody>
     <?php foreach($posts as $post): ?>
         <tr>
-            <th scope="row"><?= $post['id']?></th>
-            <td><?=$post['fname']?></td>
-            <td><?=$post['lname']?></td>
-            <td><?=$post['email']?></td>
+            <th scope="row"><a href="/id=<?=$post['id']?>"><?= $post['id']?></a></th>
+            <td><?=$post['title']?></td>
+            <td><?=$post['content']?></td>
+            <td><?=$post['likes']?></td>
         </tr>
     <?php endforeach; ?>
     </tbody>
